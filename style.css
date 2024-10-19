@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* common css style start */
+.container{
+    width: 95%;
+    margin: auto;
+}
+/* common css End */
+
+/* Header-Section Css start */
+.wrapper {
+
+    .navbar{
+    display: fixed;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+     }
+    .logo{
+     & img{
+        width: 150px;
+     }  
+    }
+
+    .menu-bar{
+
+        & ul{
+            margin-top: -30px;
+            text-align: center;
+            justify-content: center;
+            
+       
+            & li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 10px ;
+                font-size: 20px;
+                font-weight: 500;
+
+            }
+        }    
+    }
+
+    .button-design{
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        gap: 5px;
+        margin-top: -30px;
+
+        .button-1{
+           background-color: #F1F1F1;
+           padding:11px 25px;
+           font-size: 17px;
+           font-weight: 500;
+           border: none;
+           border-radius: 30px;
+           cursor: pointer;
+        }
+        .button-2{
+            background-color: #000000;
+            color: white;
+            padding: 11px 25px;
+            font-size: 17px;
+            border: none;
+            border-radius: 30px;
+         }
+         & img{
+            width: 40px;
+         }
+
+    }
+   
+}
+
+ /* body section css start */
+
+.body-section{
+    position: relative;
+
+    .image-1{
+        & img{
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 750px;
+        }   
+    }
+
+    .find-offer{
+        width: 800px;
+        height: 250px;
+        background-color: #fff;
+        padding: 35px;
+        border-radius: 15px;
+        position: absolute;
+        top: 20px;
+        left: 340px;
+        bottom:0px;
+
+        & h1{
+            text-align: center;
+            font-weight: 500;
+            margin-top: ;
+        }
+        .find-item-1{
+            display: flex;
+            padding-top: 40px;
+            padding-bottom: 25px;
+            justify-content: space-evenly;
+
+            & select{
+                width: 150px;
+                padding: 5px;
+                font-size: 18px;
+                border: none;
+                background-color: #F1F1F1;
+                border-radius: 4px;
+            }
+        }
+        .find-item-2{
+            margin-left: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            & h3{
+                background-color: #F1F1F1;
+                padding: 10px 0;
+                width: 500px;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 15px;
+                margin-left: 13px;
+            }
+            & button{
+                border: none;
+                background-color:#00EBC7 ;
+                padding: 0 40px;
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 30px;
+                margin-left: 13px;
+                cursor: pointer;
+            }
+        }
+
+        .button-3{
+            text-align: center;
+            margin-top: 100px;
+
+            & button{
+                border: none;
+                border: 1px solid #F1F1F1;
+                color: white;
+                background-color: transparent;
+                padding: 10px 40px;
+                text-decoration: underline;
+                border-radius: 30px;
+                font-size: 17px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+/* Crypto Section */
+.crypto-section{
+    background-color: #FDE24F;
+    text-align: center;
+    padding: 30px;
+
+    .crypto-details{
+        & h2{
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        & img{
+            width: 80%;
+            margin-top: 20px;
+        }
+    }
+}
+/* Feature Section */
+.feature-area{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 40px;
+    & h2{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .feature-button{
+        text-align: center;
+        margin-top: 60px;
+        & button{
+            padding: 10px 24px;
+            background-color: transparent;
+            border: 2px solid #000000;
+            font-size: 17px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    }
+    .feature-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        margin-top: 60px;
+
+        .feature-item{
+            text-align: center;
+            & img{
+                width: 50px;
+            }
+            & h3{
+                margin: 15px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            & p{
+                width: 250px;
+                margin: 0 auto;
+                color: #535353;
+            }
+            & a{
+                display: block;
+                color: #000000;
+                margin-top: 30px;
+
+            }
+        }
+    }
+}
+/* Buy Sell css section */
+.buy-sell-section{
+    padding: 80px 0;
+    background-color:#F8F8F8;
+    border-bottom: 1px solid #000000;
+    .buy-sell{
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+
+        .buy{
+            margin-left: 100px;
+            & h3{
+                margin-bottom: 30px;
+            }
+            .buy-sell-item{
+                border: 1px solid #000000;
+                display: flex;
+                gap: 30px;
+                background-color: #fff;
+                width: 500px;
+                border-radius: 15px;
+                margin-bottom: 15px;
+               
+                & img{
+                    width: 50px;
+                    margin-left: 20px;
+                    object-fit: contain;
+                }
+                .curency-details{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    font-weight: 500;
+                }
+            }
+            .buy-sell-button{
+                text-align: center;
+                margin-top: 50px;
+                
+                & button{
+                    background-color: #000000;
+                    color: white;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 15px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-right: 150px;
+                    cursor: pointer;
+                }
+    
+            }
+        }
+       
+
+    }
+}
+/* Crypto Section */
+.crypto-section-2{
+    text-align: center;
+    background-color:#CFBAFF ;
+    padding: 90px;
+
+    .crypto-text{
+        font-size: 48px;
+    }
+    & button{
+        border: none;
+        padding: 10px 25px;
+        border-radius: 30px;
+        background-color: #000000;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 70px;
+    }
+}
+/* footer section */
+footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 50px;
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-bottom:60px ;
+        .footer-item{
+            & h3{
+                font-size: 22px;
+            }
+            & ul{
+                list-style: none;
+                margin-top: 25px;
+
+                & li{
+                    display: block;
+                    font-size: 17px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+    .copyright-section{
+        & p{
+            text-align: center;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+
+        & h5{
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    }
+}
